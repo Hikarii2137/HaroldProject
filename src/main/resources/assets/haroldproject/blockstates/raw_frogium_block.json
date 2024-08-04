@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "haroldproject:block/raw_frogium_block"
+    }
+  }
+}

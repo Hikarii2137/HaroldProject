@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients":
+  [
+    {
+      "item": "haroldproject:frogium_block"
+    }
+  ],
+  "result":
+  {
+    "item": "haroldproject:frogium_ingot",
+    "count": 9
+  }
+}

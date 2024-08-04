@@ -1,6 +1,14 @@
 {
-  "item.haroldproject.froggycookie": "Froggy Cookie",
+  "item.haroldproject.froggy_cookie": "Froggy Cookie",
   "item.haroldproject.fly": "Fly",
+  "item.haroldproject.raw_frogium": "Raw Frogium",
+  "item.haroldproject.frogium_ingot": "Frogium Ingot",
+  "item.haroldproject.frogium_nugget": "Frogium Nugget",
+
+  "block.haroldproject.frogium_block": "Block of Frogium",
+  "block.haroldproject.raw_frogium_block": "Block of Raw Frogium",
+  "block.haroldproject.frogium_ore_block": "Frogium Ore",
+
 
   "creativetab.froggy_tab": "Froggy Items"
 }

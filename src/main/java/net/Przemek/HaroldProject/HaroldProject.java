@@ -1,6 +1,7 @@
 package net.Przemek.HaroldProject;
 
 import com.mojang.logging.LogUtils;
+import net.Przemek.HaroldProject.block.ModBlocks;
 import net.Przemek.HaroldProject.item.ModCreativeModeTab;
 import net.Przemek.HaroldProject.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -8,12 +9,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -35,6 +33,8 @@ public class HaroldProject
         ModCreativeModeTab.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -58,11 +58,21 @@ public class HaroldProject
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
         {
-            event.accept(ModItems.FROGGYCOOKIE);
+            event.accept(ModItems.FROGGY_COOKIE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
             event.accept(ModItems.FLY);
+            event.accept(ModItems.RAW_FROGIUM);
+            event.accept(ModItems.FROGIUM_INGOT);
+            event.accept(ModItems.FROGIUM_NUGGET);
+
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.FROGIUM_BLOCK.get());
+            event.accept(ModBlocks.RAW_FROGIUM_BLOCK.get());
+            event.accept(ModBlocks.FROGIUM_ORE_BLOCK.get());
         }
     }
 

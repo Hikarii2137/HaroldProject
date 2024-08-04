@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "frogium_ingot",
+  "ingredient": {
+    "item": "haroldproject:raw_frogium"
+  },
+  "result": "haroldproject:frogium_ingot"
+}
