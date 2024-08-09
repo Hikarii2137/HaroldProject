@@ -1,9 +1,9 @@
-package net.Przemek.HaroldProject;
+package net.Hikarii2137.HaroldProject;
 
 import com.mojang.logging.LogUtils;
-import net.Przemek.HaroldProject.block.ModBlocks;
-import net.Przemek.HaroldProject.item.ModCreativeModeTab;
-import net.Przemek.HaroldProject.item.ModItems;
+import net.Hikarii2137.HaroldProject.block.ModBlocks;
+import net.Hikarii2137.HaroldProject.item.ModCreativeModeTab;
+import net.Hikarii2137.HaroldProject.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

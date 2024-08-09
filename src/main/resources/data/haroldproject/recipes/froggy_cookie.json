@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":
+  [
+    "#XK"
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "minecraft:wheat"
+    },
+    "X":
+    {
+      "item": "minecraft:green_dye"
+    },
+    "K":
+    {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result":
+  {
+    "item": "haroldproject:froggy_cookie"
+  }
+}

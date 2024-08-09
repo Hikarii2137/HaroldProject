@@ -1,6 +1,6 @@
-package net.Przemek.HaroldProject.item;
+package net.Hikarii2137.HaroldProject.item;
 
-import net.Przemek.HaroldProject.HaroldProject;
+import net.Hikarii2137.HaroldProject.HaroldProject;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

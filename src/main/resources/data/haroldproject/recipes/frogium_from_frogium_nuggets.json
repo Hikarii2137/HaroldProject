@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern":
+  [
+    "###",
+    "###",
+    "###"
+  ],
+  "key":
+  {
+  "#":
+    {
+    "item": "haroldproject:frogium_nugget"
+    }
+  },
+  "result":
+  {
+    "item": "haroldproject:frogium_ingot"
+  }
+}

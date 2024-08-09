@@ -1,7 +1,7 @@
-package net.Przemek.HaroldProject.item;
+package net.Hikarii2137.HaroldProject.item;
 
-import net.Przemek.HaroldProject.HaroldProject;
-import net.Przemek.HaroldProject.block.ModBlocks;
+import net.Hikarii2137.HaroldProject.HaroldProject;
+import net.Hikarii2137.HaroldProject.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

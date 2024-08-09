@@ -1,11 +1,13 @@
-package net.Przemek.HaroldProject.block;
+package net.Hikarii2137.HaroldProject.block;
 
-import net.Przemek.HaroldProject.HaroldProject;
-import net.Przemek.HaroldProject.item.ModItems;
+import net.Hikarii2137.HaroldProject.HaroldProject;
+import net.Hikarii2137.HaroldProject.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,7 +28,7 @@ public class ModBlocks
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> FROGIUM_ORE_BLOCK = registerBlock("frogium_ore_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
